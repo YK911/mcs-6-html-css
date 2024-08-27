@@ -1,0 +1,45 @@
+/* #region Variables */
+:root {
+  --main-dark: 17 17 17;
+}
+/* #endregion */
+
+/* #region Base */
+body {
+  font-family: sans-serif;
+  color: rgb(var(--main-dark) / 10%);
+}
+ul,
+ol {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+button {
+  color: currentColor;
+  cursor: pointer;
+}
+/* #endregion */
+
+/* #region Common */
+.section {
+  padding: 60px 0;
+}
+/* #endregion */
+
+/* #region Benefits */
+.benefits {
+}
+.benefits-title {
+}
+.benefits-list {
+}
+.benefits-item {
+}
+.benefits-caption {
+}
+.benefits-desc {
+}
+/* #endregion */

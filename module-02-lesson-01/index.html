@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MCS-06</title>
+    <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.svg" type="image/svg+xml" />
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- #region Header -->
@@ -16,13 +20,13 @@
         </a>
         <ul>
           <li>
-            <a href="#home">Home</a>
+            <a class="link" href="#home" id="link-1">Home</a>
           </li>
           <li>
-            <a href="#made">How it’s made?</a>
+            <a class="link" href="#made">How it’s made?</a>
           </li>
           <li>
-            <a href="#reviews">Chocolate is loved</a>
+            <a class="link" href="#reviews">Chocolate is loved</a>
           </li>
         </ul>
       </nav>
@@ -77,21 +81,21 @@
       </section>
       <!-- #endregion Hero -->
       <!-- #region Benefits -->
-      <section id="benefits">
-        <h2 hidden>Our chocolate benefits</h2>
-        <ul>
-          <li>
-            <h3>Unsurpassed taste</h3>
-            <p>
+      <section class="benefits section" id="benefits">
+        <h2 class="benefits-title" hidden>Our chocolate benefits</h2>
+        <ul class="benefits-list">
+          <li class="benefits-item">
+            <h3 class="benefits-caption">Unsurpassed taste</h3>
+            <p class="benefits-desc">
               Crafted with the finest quality cocoa beans and a dedication to
               perfection, each bite is a decadent experience that simply cannot
               be matched. Savor the richness and complexity of our Unsurpassed
               Taste and discover a new level of chocolate bliss.
             </p>
           </li>
-          <li>
-            <h3>Affordable price</h3>
-            <p>
+          <li class="benefits-item">
+            <h3 class="benefits-caption">Affordable price</h3>
+            <p class="benefits-desc">
               Indulge in high-quality chocolate without breaking the bank with
               Simply Chocolate's selection of affordable treats. Enjoy
               mouth-watering truffles and velvety chocolate bars without
@@ -99,9 +103,9 @@
               affordable luxury today.
             </p>
           </li>
-          <li>
-            <h3>Own production</h3>
-            <p>
+          <li class="benefits-item">
+            <h3 class="benefits-caption">Own production</h3>
+            <p class="benefits-desc">
               We take pride in our own production process, ensuring that every
               step is carefully crafted to perfection. From selecting the finest
               ingredients to handcrafting each piece, our attention to detail is
@@ -186,7 +190,7 @@
       </section>
       <!-- #endregion Ingridients -->
       <!-- #region Made -->
-      <section id="made">
+      <section class="section" id="made">
         <h2>How it’s <span>made</span>?</h2>
         <img src="./images/made/image.jpg" alt="" width="600" height="400" />
         <h3>
