@@ -6,59 +6,85 @@
     <title>MCS-06</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.svg" type="image/svg+xml" />
-
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.0/modern-normalize.min.css"
+    />
     <!-- Custom styles -->
+    <!-- <link rel="stylesheet" href="./css/normalize.css" /> -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- #region Header -->
-    <header id="home">
-      <nav>
-        <a href="">
-          SIMPLY CHOCOLATE
-          <img src="./images/header/logo.svg" alt="Site logo" />
+    <header class="header" id="home">
+      <nav class="header-nav">
+        <a class="header-logo" href="#">
+          <span class="header-logo-accent">SIMPLY</span> CHOCOLATE
+          <img
+            class="header-logo-icon"
+            src="./images/header/logo.svg"
+            alt="Site logo"
+          />
         </a>
-        <ul>
-          <li>
-            <a class="link" href="#home" id="link-1">Home</a>
+        <ul class="header-nav-list">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="#home" id="link-1">Home</a>
           </li>
-          <li>
-            <a class="link" href="#made">How it’s made?</a>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="#made">How it’s made?</a>
           </li>
-          <li>
-            <a class="link" href="#reviews">Chocolate is loved</a>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="#reviews">Chocolate is loved</a>
           </li>
         </ul>
       </nav>
-      <ul>
-        <li>
+      <ul class="socials header-socials">
+        <li class="socials-item">
           <a
+            class="socials-link"
             href="https://facebook.com"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Link to facebook.com"
           >
-            <img src="./images/icons/facebook.svg" alt="Facebook icon" />
+            <img
+              class="socials-icon"
+              src="./images/icons/facebook.svg"
+              alt="Facebook icon"
+            />
           </a>
         </li>
-        <li>
+        <li class="socials-item">
           <a
+            class="socials-link"
             href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Link to instagram.com"
           >
-            <img src="./images/icons/instagram.svg" alt="" />
+            <img
+              class="socials-icon"
+              src="./images/icons/instagram.svg"
+              alt=""
+            />
           </a>
         </li>
-        <li>
+        <li class="socials-item">
           <a
+            class="socials-link"
             href="https://twitter.com"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Link to twitter.com"
           >
-            <img src="./images/icons/twitter.svg" alt="" />
+            <img class="socials-icon" src="./images/icons/twitter.svg" alt="" />
           </a>
         </li>
       </ul>
@@ -67,16 +93,20 @@
     <!-- #region Main -->
     <main>
       <!-- #region Hero -->
-      <section>
-        <h1>
+      <section class="hero">
+        <h1 class="hero-title">
           Treat yourself or a loved one to our finest ingredients for a moment
           of pure delight!
         </h1>
-        <button type="button">Buy now</button>
-        <button type="button">How it’s made</button>
-        <a href="#benefits">
+        <button class="btn btn-accent" type="button">Buy now</button>
+        <button class="btn btn-primary" type="button">How it’s made</button>
+        <a class="hero-link" href="#benefits">
           scroll down
-          <img src="./images/icons/arrow.svg" alt="Arrow down icon" />
+          <img
+            class="hero-icon"
+            src="./images/icons/arrow.svg"
+            alt="Arrow down icon"
+          />
         </a>
       </section>
       <!-- #endregion Hero -->
@@ -391,7 +421,7 @@
             </p>
           </li>
         </ul>
-        <button type="button">Leave a review</button>
+        <button class="btn btn-secondary" type="button">Leave a review</button>
       </section>
       <!-- #endregion Reviews -->
     </main>

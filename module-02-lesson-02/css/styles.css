@@ -1,13 +1,23 @@
 /* #region Variables */
 :root {
-  --main-dark: 17 17 17;
+  /* Fonts */
+  --main-font: Montserrat, sans-serif;
+  --secondary-font: Roboto, sans-serif;
+  /* Colors */
+  --cl-main-dark: 17 17 17;
+  --cl-main-light: 255 255 255;
+  --cl-main-accent: 253 146 34;
+
+  --cl-secondary-dark: 30 24 35;
+  --cl-secondary-light: 30 24 35;
+  --cl-secondary-accent: 30 24 35;
 }
 /* #endregion */
 
 /* #region Base */
 body {
-  font-family: sans-serif;
-  color: rgb(var(--main-dark) / 10%);
+  font-family: var(--main-font);
+  color: rgb(var(--cl-main-dark));
 }
 ul,
 ol {
@@ -18,6 +28,7 @@ a {
   color: currentColor;
 }
 button {
+  font-family: inherit;
   color: currentColor;
   cursor: pointer;
 }
@@ -25,12 +36,81 @@ button {
 
 /* #region Common */
 .section {
-  padding: 60px 0;
+}
+/* Socials */
+.socials {
+}
+.socials-item {
+}
+.socials-link {
+}
+.socials-icon {
+}
+/* Buttons */
+.btn {
+}
+.btn-accent {
+}
+.btn-primary {
+}
+.btn-secondary {
+}
+/* #endregion */
+
+/* #region Header */
+.header {
+}
+.header-nav {
+}
+.header-logo {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+}
+.header-logo-accent {
+  font-style: italic;
+}
+.header-logo-icon {
+}
+.header-nav-list {
+}
+.header-nav-item {
+}
+.header-nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+}
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: rgb(var(--cl-main-accent));
+}
+.header-socials {
+}
+/* #endregion */
+
+/* #region Hero */
+.hero {
+  background-color: rgb(var(--cl-main-dark) / 40%);
+}
+.hero-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+  color: rgb(var(--cl-main-light));
+}
+.hero-link {
+}
+.hero-icon {
 }
 /* #endregion */
 
 /* #region Benefits */
 .benefits {
+  background: rgb(var(--cl-secondary-dark));
 }
 .benefits-title {
 }
@@ -41,5 +121,9 @@ button {
 .benefits-caption {
 }
 .benefits-desc {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: rgb(var(--cl-main-light) / 70%);
 }
 /* #endregion */
