@@ -1,0 +1,33 @@
+/* #region */
+.wrapper {
+  width: 800px;
+  min-height: 600px;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 60px;
+
+  list-style-type: none;
+  border-radius: 10px;
+  background-color: lightgreen;
+  outline: 5px solid rgb(75, 167, 75);
+  outline-offset: -5px;
+  padding: 0;
+}
+
+.item {
+  width: 150px;
+  height: 150px;
+  font-size: 64px;
+  line-height: 150px;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  background-color: slateblue;
+  outline: 5px solid rgb(45, 35, 125);
+  outline-offset: -5px;
+}
+/* #endregion */
+
+/*=====================================*\
+  FLEX BOX
+\*=====================================*/
