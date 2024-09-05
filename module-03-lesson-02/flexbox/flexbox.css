@@ -1,7 +1,7 @@
 /* #region */
 .wrapper {
   width: 800px;
-  min-height: 600px;
+  /* min-height: 600px; */
   padding: 20px;
   margin: 0 auto;
   margin-top: 60px;
@@ -31,3 +31,56 @@
 /*=====================================*\
   FLEX BOX
 \*=====================================*/
+:root {
+  --items: 4;
+  --indent-col: 23px;
+  --indent-row: var(--indent-col);
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: var(--indent-row);
+  column-gap: var(--indent-col);
+
+  /* Default prop: */
+  /* flex-direction: row; */
+  /* justify-content: flex-start; */
+  /* align-items: stretch; */
+  /* align-content: stretch; */
+  /* flex-wrap: nowrap; */
+  outline: 0;
+}
+.item {
+  width: calc((100% - var(--indent-col) * (var(--items) - 1)) / var(--items));
+  /* margin-right: 66px;
+  margin-bottom: 20px; */
+}
+/* .item:first-child {
+  background-color: tomato;
+}
+.item:last-child {
+  background-color: teal;
+} */
+/* a * n + b */
+/* .item:nth-child(4n) {
+  margin-right: 0;
+}
+.item:nth-last-child(-n + 4) {
+  margin-bottom: 0;
+} */
+
+/* DRY */
+
+.clients {
+  --items: 3;
+  --indent-col: 50px;
+
+  background-color: lightblue;
+}
+.reviews {
+  --items: 5;
+  --indent-col: 8px;
+
+  background-color: darkmagenta;
+}
