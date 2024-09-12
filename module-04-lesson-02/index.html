@@ -28,13 +28,9 @@
         <nav class="header-nav">
           <a class="header-logo" href="#">
             <span class="header-logo-accent">SIMPLY</span> CHOCOLATE
-            <img
-              class="header-logo-icon"
-              src="./images/header/logo.svg"
-              alt="Site logo"
-              width="24"
-              height="24"
-            />
+            <svg class="header-logo-icon" width="24" height="24">
+              <use href="./images/icons.svg#logo"></use>
+            </svg>
           </a>
           <ul class="header-nav-list">
             <li class="header-nav-item">
@@ -59,7 +55,7 @@
               rel="noopener noreferrer"
               aria-label="Link to facebook.com"
             >
-              <svg class="" width="24" height="24">
+              <svg class="socials-icon" width="24" height="24">
                 <use href="./images/icons.svg#facebook"></use>
               </svg>
             </a>
@@ -72,13 +68,9 @@
               rel="noopener noreferrer"
               aria-label="Link to instagram.com"
             >
-              <img
-                class="socials-icon"
-                src="./images/icons/instagram.svg"
-                alt=""
-                width="24"
-                height="24"
-              />
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
             </a>
           </li>
           <li class="socials-item">
@@ -89,13 +81,9 @@
               rel="noopener noreferrer"
               aria-label="Link to twitter.com"
             >
-              <img
-                class="socials-icon"
-                src="./images/icons/twitter.svg"
-                alt=""
-                width="24"
-                height="24"
-              />
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -122,15 +110,15 @@
                 </button>
               </li>
             </ul>
+
             <a class="hero-link" href="#benefits">
               scroll down
-              <img
-                class="hero-icon"
-                src="./images/icons/arrow.svg"
-                alt="Arrow down icon"
-                width="38"
-                height="39"
-              />
+
+              <span class="hero-icon">
+                <svg width="22" height="22">
+                  <use href="./images/icons.svg#arrow-down"></use>
+                </svg>
+              </span>
             </a>
           </div>
         </div>
@@ -142,6 +130,11 @@
           <h2 class="visually-hidden benefits-title">Our chocolate benefits</h2>
           <ul class="benefits-list">
             <li class="benefits-item">
+              <div class="benefits-wrapper">
+                <svg class="benefits-icon" width="32" height="32">
+                  <use href="./images/icons.svg#chocolate"></use>
+                </svg>
+              </div>
               <h3 class="benefits-caption">Unsurpassed taste</h3>
               <p class="benefits-desc">
                 Crafted with the finest quality cocoa beans and a dedication to
@@ -151,6 +144,11 @@
               </p>
             </li>
             <li class="benefits-item">
+              <div class="benefits-wrapper">
+                <svg class="benefits-icon" width="32" height="32">
+                  <use href="./images/icons.svg#coin"></use>
+                </svg>
+              </div>
               <h3 class="benefits-caption">Affordable price</h3>
               <p class="benefits-desc">
                 Indulge in high-quality chocolate without breaking the bank with
@@ -161,6 +159,11 @@
               </p>
             </li>
             <li class="benefits-item">
+              <div class="benefits-wrapper">
+                <svg class="benefits-icon" width="32" height="32">
+                  <use href="./images/icons.svg#spoon"></use>
+                </svg>
+              </div>
               <h3 class="benefits-caption">Own production</h3>
               <p class="benefits-desc">
                 We take pride in our own production process, ensuring that every
@@ -423,6 +426,14 @@
                   width="368"
                   height="464"
                 />
+                <div class="overlay">
+                  <p class="overlay-text">
+                    Chocolate with fruit is an unbeatable combination of two of
+                    the tastiest things in the world. This dessert combines
+                    delicate and aromatic chocolate with fresh and juicy fruits,
+                    creating a true poetry of taste.
+                  </p>
+                </div>
               </div>
               <h3 class="bestsellers-desc">CHOCOLATE WITH NUTS</h3>
             </li>
@@ -435,6 +446,14 @@
                   width="368"
                   height="464"
                 />
+                <div class="overlay">
+                  <p class="overlay-text">
+                    Chocolate with fruit is an unbeatable combination of two of
+                    the tastiest things in the world. This dessert combines
+                    delicate and aromatic chocolate with fresh and juicy fruits,
+                    creating a true poetry of taste.
+                  </p>
+                </div>
               </div>
               <h3 class="bestsellers-desc">CHOCOLATE WITH FRUITS</h3>
             </li>
@@ -447,6 +466,14 @@
                   width="368"
                   height="464"
                 />
+                <div class="overlay">
+                  <p class="overlay-text">
+                    Chocolate with fruit is an unbeatable combination of two of
+                    the tastiest things in the world. This dessert combines
+                    delicate and aromatic chocolate with fresh and juicy fruits,
+                    creating a true poetry of taste.
+                  </p>
+                </div>
               </div>
               <h3 class="bestsellers-desc">DARK CHOCOLATE</h3>
             </li>
