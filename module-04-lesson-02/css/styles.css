@@ -131,8 +131,9 @@ button {
   align-items: center;
   width: 100%;
   height: 100%;
+  color: var(--icon-fill);
+  border: 1px solid var(--border-cl);
   border-radius: 10px;
-  border: 1px solid rgb(var(--cl-primary) / 10%);
   transition: var(--anim-fast);
   transition-property: color, border-color;
 }
@@ -269,6 +270,8 @@ button {
 }
 
 .header-socials {
+  --icon-fill: rgb(var(--cl-primary));
+  --border-cl: rgb(var(--cl-primary) / 10%);
 }
 /* #endregion */
 
@@ -668,6 +671,8 @@ button {
   color: rgb(var(--cl-white));
 }
 .footer-socials {
+  --icon-fill: rgb(var(--cl-white));
+  --border-cl: rgb(var(--cl-white) / 10%);
 }
 .footer-address {
 }
