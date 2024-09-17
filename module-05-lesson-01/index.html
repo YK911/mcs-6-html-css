@@ -18,6 +18,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.0/modern-normalize.min.css"
     />
+    <!-- AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Custom styles -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -102,10 +104,20 @@
           <div class="hero-wrapper">
             <ul class="hero-list">
               <li class="hero-item">
-                <button class="btn btn-accent" type="button">Buy now</button>
+                <button
+                  class="btn btn-accent hero-btn"
+                  type="button"
+                  style="--i: 1.14"
+                >
+                  Buy now
+                </button>
               </li>
               <li class="hero-item">
-                <button class="btn btn-primary" type="button">
+                <button
+                  class="btn btn-primary hero-btn"
+                  type="button"
+                  style="--i: 1"
+                >
                   How it’s made
                 </button>
               </li>
@@ -184,7 +196,11 @@
             <span class="accent">taste</span> sensation
           </h2>
           <ul class="ingredients-list card-set">
-            <li class="ingredients-item card-set-item">
+            <li
+              class="ingredients-item card-set-item"
+              data-aos="fade-right"
+              data-aos-delay="150"
+            >
               <img
                 class="ingredients-ill"
                 src="./images/ingredients/img-1.png"
@@ -194,7 +210,11 @@
               />
               <h3 class="ingredients-caption">MILK CHOCOLATE</h3>
             </li>
-            <li class="ingredients-item card-set-item">
+            <li
+              class="ingredients-item card-set-item"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
               <img
                 class="ingredients-ill"
                 src="./images/ingredients/img-2.png"
@@ -204,7 +224,11 @@
               />
               <h3 class="ingredients-caption">MILK</h3>
             </li>
-            <li class="ingredients-item card-set-item">
+            <li
+              class="ingredients-item card-set-item"
+              data-aos="fade-right"
+              data-aos-delay="450"
+            >
               <img
                 class="ingredients-ill"
                 src="./images/ingredients/img-3.png"
@@ -214,7 +238,11 @@
               />
               <h3 class="ingredients-caption">NUTS</h3>
             </li>
-            <li class="ingredients-item card-set-item">
+            <li
+              class="ingredients-item card-set-item"
+              data-aos="fade-right"
+              data-aos-delay="600"
+            >
               <img
                 class="ingredients-ill"
                 src="./images/ingredients/img-4.png"
@@ -224,7 +252,11 @@
               />
               <h3 class="ingredients-caption">SEMI - SWEET CHOCOLATE</h3>
             </li>
-            <li class="ingredients-item card-set-item">
+            <li
+              class="ingredients-item card-set-item"
+              data-aos="fade-right"
+              data-aos-delay="750"
+            >
               <img
                 class="ingredients-ill"
                 src="./images/ingredients/img-5.png"
@@ -234,7 +266,11 @@
               />
               <h3 class="ingredients-caption">CACAO</h3>
             </li>
-            <li class="ingredients-item card-set-item">
+            <li
+              class="ingredients-item card-set-item"
+              data-aos="fade-right"
+              data-aos-delay="900"
+            >
               <img
                 class="ingredients-ill"
                 src="./images/ingredients/img-6.png"
@@ -244,7 +280,11 @@
               />
               <h3 class="ingredients-caption">RASPBERRY</h3>
             </li>
-            <li class="ingredients-item card-set-item">
+            <li
+              class="ingredients-item card-set-item"
+              data-aos="fade-right"
+              data-aos-delay="1050"
+            >
               <img
                 class="ingredients-ill"
                 src="./images/ingredients/img-7.png"
@@ -533,7 +573,10 @@
               </p>
             </li>
           </ul>
-          <button class="btn btn-secondary reviews-btn" type="button">
+          <button
+            class="btn btn-secondary reviews-btn js-open-modal"
+            type="button"
+          >
             Leave a review
           </button>
         </div>
@@ -625,5 +668,72 @@
       </div>
     </footer>
     <!-- #endregion Footer -->
+    <!-- #region Modal window -->
+    <div hidden class="backdrop js-modal">
+      <div class="modal">
+        <button class="modal-btn js-close-modal" type="button">
+          <svg class="modal-btn-icon" width="28" height="28">
+            <use href="./images/icons.svg#x-close"></use>
+          </svg>
+        </button>
+
+        <p class="modal-caption">
+          LEAVE A REVIEW ABOUT <span class="accent">OUR CHOCOLATE</span>
+        </p>
+
+        <form class="reviews-form" name="reviews_form">
+          <p>Choose subscription:</p>
+          <div>
+            <input
+              type="radio"
+              name="subscription"
+              id="subscription"
+              value="base"
+            />
+            <label for="subscription">Base</label>
+            <label>
+              <input
+                type="radio"
+                name="subscription"
+                value="lite"
+                checked
+              />Lite
+            </label>
+            <input type="radio" name="subscription" id="" value="pro" />Pro
+          </div>
+
+          <p>Choose notification servises:</p>
+          <div>
+            <input
+              type="checkbox"
+              name="servises"
+              id=""
+              value="email"
+              checked
+            />Email
+            <input
+              type="checkbox"
+              name="servises"
+              id=""
+              value="sms"
+              checked
+            />SMS
+            <input type="checkbox" name="servises" id="" value="call" />Call
+          </div>
+
+          <label>
+            <span>Name</span>
+            <input name="user_name" type="text" minlength="4" />
+          </label>
+          <input name="user_email" type="email" />
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <!-- #endregion -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/scroll-animation.js"></script>
+    <script src="./js/form.js"></script>
   </body>
 </html>

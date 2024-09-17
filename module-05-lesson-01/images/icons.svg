@@ -1,5 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
   <defs>
+    <symbol id="x-close" viewBox="0 0 28 28" >
+      <path d="M21 7L7 21"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M7 7L21 21"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
     <symbol id="logo" viewBox="0 0 32 32">
       <path fill="#fcf1e0" d="M5.277 21.409 16.054 3.985l.64-.674 8.236 5.491.056 3.314 2.01 3.28-8.88 14.077L5.277 21.41z" style="fill:var(--color1, #fcf1e0)"/>
       <path fill="none" stroke="#fd9222" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="M21.635 23.88 7.45 15.016m3.911-6.417 14.186 8.864M10.63 25.864l11.736-19.25m4.81 8.175c-3.04-1.899-4.234-3.384-2.278-6.592l-9.626-6.015-11.736 19.25 14.185 8.864 9.454-15.507z" style="stroke:var(--color2, #fd9222)"/>
@@ -35,5 +39,6 @@
       <path d="M10.909 24V8.727l14.545 7.636-14.545 7.636z"/>
       <path stroke-width=".727" d="M31.636 16c0 8.636-7.001 15.636-15.636 15.636S.364 24.635.364 16C.364 7.364 7.365.364 16 .364S31.636 7.365 31.636 16z"/>
     </symbol>
+
   </defs>
 </svg>

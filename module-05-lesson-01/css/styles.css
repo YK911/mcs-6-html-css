@@ -229,6 +229,25 @@ button {
   font-style: italic;
 }
 .header-logo-icon {
+  animation: rotate 8000ms linear 2000ms infinite both;
+  animation-play-state: running;
+}
+.header-logo:hover .header-logo-icon {
+  animation-play-state: paused;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(360deg) scale(1.1);
+  }
+  50% {
+    transform: rotate(720deg) scale(1);
+  }
+  100% {
+    transform: rotate(720deg) scale(1);
+  }
 }
 .header-nav-list {
   display: flex;
@@ -303,6 +322,17 @@ button {
   line-height: 1.21;
   letter-spacing: -0.03em;
   color: rgb(var(--cl-light));
+  animation: shift-bottom 400ms ease-in 1000ms both;
+}
+@keyframes shift-bottom {
+  from {
+    transform: translateY(-150%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 .hero-wrapper {
   display: flex;
@@ -312,6 +342,23 @@ button {
 .hero-list {
   display: flex;
   gap: 14px;
+}
+.hero-btn {
+  animation: shift-right 400ms ease-in both;
+  animation-delay: calc(1400ms * var(--i));
+}
+@keyframes shift-right {
+  0% {
+    transform: translateX(-150%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 .hero-link {
   display: inline-flex;
@@ -346,6 +393,7 @@ button {
 .hero-icon svg {
   fill: currentColor;
 }
+
 /* #endregion */
 
 /* #region Benefits */
@@ -413,7 +461,23 @@ button {
   border: 1px solid transparent;
   border-radius: 15px;
   color: rgb(var(--cl-primary));
+  /* animation: flip-2-hor-top-1 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation-play-state: paused; */
 }
+/* .ingredients-item:hover {
+  animation-play-state: running;
+} */
+@keyframes flip-2-hor-top-1 {
+  0% {
+    transform: translateY(0) rotateX(0);
+    transform-origin: 50% 0%;
+  }
+  100% {
+    transform: translateY(-100%) rotateX(-180deg);
+    transform-origin: 50% 100%;
+  }
+}
+
 .ingredients-item:nth-child(2n) {
   border-color: rgb(var(--cl-accent));
 }
@@ -716,4 +780,68 @@ button {
 .footer-nav-link:focus {
   color: rgb(var(--cl-accent));
 }
+/* #endregion */
+/* #region Modal*/
+.backdrop {
+  position: fixed;
+  /* inset: 0; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(var(--cl-primary) / 16%);
+  backdrop-filter: blur(4px);
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  max-width: 517px;
+  width: 90%;
+  min-height: 794px;
+  padding: 40px;
+
+  border-radius: 15px;
+  background: #fafafa;
+}
+.modal-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  color: rgb(var(--cl-primary));
+  transition: var(--anim-fast);
+  transition-property: color;
+}
+.modal-btn:hover,
+.modal-btn:focus {
+  color: rgb(var(--cl-accent));
+}
+.modal-btn-icon {
+  stroke: currentColor;
+}
+.modal-caption {
+  max-width: 298px;
+  margin-bottom: 40px;
+
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
 /* #endregion */
