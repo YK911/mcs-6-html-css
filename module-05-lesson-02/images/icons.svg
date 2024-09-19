@@ -1,8 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
   <defs>
-    <symbol id="x-close" viewBox="0 0 28 28" >
-      <path d="M21 7L7 21"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M7 7L21 21"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <symbol id="x-close" viewBox="0 0 28 28">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 7 7 21M7 7l14 14"/>
     </symbol>
     <symbol id="logo" viewBox="0 0 32 32">
       <path fill="#fcf1e0" d="M5.277 21.409 16.054 3.985l.64-.674 8.236 5.491.056 3.314 2.01 3.28-8.88 14.077L5.277 21.41z" style="fill:var(--color1, #fcf1e0)"/>
@@ -39,6 +38,21 @@
       <path d="M10.909 24V8.727l14.545 7.636-14.545 7.636z"/>
       <path stroke-width=".727" d="M31.636 16c0 8.636-7.001 15.636-15.636 15.636S.364 24.635.364 16C.364 7.364 7.365.364 16 .364S31.636 7.365 31.636 16z"/>
     </symbol>
-
+    <symbol id="user" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="M26.667 28v-2.667A5.332 5.332 0 0 0 21.334 20H10.667a5.332 5.332 0 0 0-5.333 5.333V28M16 14.667A5.333 5.333 0 1 0 16 4a5.333 5.333 0 0 0 0 10.667z"/>
+    </symbol>
+    <symbol id="email" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="M5.333 5.333h21.333c1.467 0 2.667 1.2 2.667 2.667v16c0 1.467-1.2 2.667-2.667 2.667H5.333A2.675 2.675 0 0 1 2.666 24V8c0-1.467 1.2-2.667 2.667-2.667z"/>
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="M29.333 8 16 17.333 2.667 8"/>
+    </symbol>
+    <symbol id="phone" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="M29.333 22.56v4a2.655 2.655 0 0 1-1.812 2.537 2.672 2.672 0 0 1-1.094.13 26.398 26.398 0 0 1-11.507-4.093 25.988 25.988 0 0 1-8-8 26.382 26.382 0 0 1-4.093-11.56 2.657 2.657 0 0 1 .687-2.038 2.664 2.664 0 0 1 1.967-.868h4a2.67 2.67 0 0 1 2.667 2.294 17.16 17.16 0 0 0 .933 3.747 2.675 2.675 0 0 1-.6 2.814l-1.693 1.693a21.333 21.333 0 0 0 8 8l1.693-1.693c.362-.359.82-.606 1.319-.712s1.017-.067 1.495.112c1.21.451 2.467.765 3.747.933a2.665 2.665 0 0 1 2.293 2.707z"/>
+    </symbol>
+    <symbol id="check-mark" fill="none" viewBox="0 0 10 10">
+      <path fill="#fff" d="M3.949 9.754c.436 0 .765-.167.988-.502l4.828-7.275c.08-.119.14-.235.177-.35.039-.119.058-.232.058-.34 0-.3-.105-.548-.314-.743a1.056 1.056 0 0 0-.763-.298c-.21 0-.387.042-.534.125-.143.08-.279.22-.408.419L3.928 7.155l-2.03-2.432a1.046 1.046 0 0 0-.826-.382c-.31 0-.566.1-.769.298A1.005 1.005 0 0 0 0 5.387c0 .136.02.265.063.387.045.119.127.242.246.371L3.002 9.32c.248.29.563.434.947.434Z"/>
+    </symbol>
+    <symbol id="error" fill="none" viewBox="0 0 24 24">
+      <path fill="#E74A3B" d="M11 15h2v2h-2v-2Zm0-8h2v6h-2V7Zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8Z"/>
+    </symbol>
   </defs>
 </svg>
