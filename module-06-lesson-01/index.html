@@ -47,7 +47,12 @@
               <a class="header-nav-link" href="#reviews">Chocolate is loved</a>
             </li>
           </ul>
-          <button class="mobile-menu-btn" type="button">
+          <button
+            class="mobile-menu-btn js-open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
             <svg class="mobile-menu-icon" width="28" height="28">
               <use href="./images/icons.svg#burger-menu"></use>
             </svg>
@@ -64,10 +69,6 @@
             >
               <svg class="socials-icon" width="24" height="24">
                 <use class="no-hover" href="./images/icons.svg#facebook"></use>
-                <!-- <use
-                  class="on-hover"
-                  href="./images/icons.svg#burger-menu"
-                ></use> -->
               </svg>
             </a>
           </li>
@@ -104,7 +105,7 @@
     <!-- #region Main -->
     <main>
       <!-- #region Hero -->
-      <section hidden class="hero">
+      <section class="hero">
         <div class="hero-container container">
           <h1 class="hero-title">
             Treat yourself or a loved one to our finest ingredients for a moment
@@ -210,13 +211,30 @@
               data-aos="fade-right"
               data-aos-delay="150"
             >
-              <img
-                class="ingredients-ill"
-                src="./images/ingredients/img-1.png"
-                alt=""
-                width="214"
-                height="160"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/ingredients/img-1@1x.webp 1x,
+                    ./images/ingredients/img-1@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/ingredients/img-1@1x.png 1x,
+                    ./images/ingredients/img-1@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <img
+                  class="ingredients-ill"
+                  src="./images/ingredients/img-1@1x.png"
+                  alt=""
+                  width="236"
+                  height="176"
+                  loading="lazy"
+                />
+              </picture>
               <h3 class="ingredients-caption">MILK CHOCOLATE</h3>
             </li>
             <li
@@ -226,10 +244,15 @@
             >
               <img
                 class="ingredients-ill"
-                src="./images/ingredients/img-2.png"
+                srcset="
+                  ./images/ingredients/img-2@1x.png 1x,
+                  ./images/ingredients/img-2@2x.png 2x
+                "
+                src="./images/ingredients/img-2@1x.png"
                 alt=""
-                width="214"
-                height="160"
+                width="236"
+                height="176"
+                loading="lazy"
               />
               <h3 class="ingredients-caption">MILK</h3>
             </li>
@@ -240,10 +263,15 @@
             >
               <img
                 class="ingredients-ill"
-                src="./images/ingredients/img-3.png"
+                srcset="
+                  ./images/ingredients/img-3@1x.png 1x,
+                  ./images/ingredients/img-3@2x.png 2x
+                "
+                src="./images/ingredients/img-3@1x.png"
                 alt=""
-                width="214"
-                height="160"
+                width="236"
+                height="176"
+                loading="lazy"
               />
               <h3 class="ingredients-caption">NUTS</h3>
             </li>
@@ -254,10 +282,15 @@
             >
               <img
                 class="ingredients-ill"
-                src="./images/ingredients/img-4.png"
+                srcset="
+                  ./images/ingredients/img-4@1x.png 1x,
+                  ./images/ingredients/img-4@2x.png 2x
+                "
+                src="./images/ingredients/img-4@1x.png"
                 alt=""
-                width="214"
-                height="160"
+                width="236"
+                height="176"
+                loading="lazy"
               />
               <h3 class="ingredients-caption">SEMI - SWEET CHOCOLATE</h3>
             </li>
@@ -268,10 +301,15 @@
             >
               <img
                 class="ingredients-ill"
-                src="./images/ingredients/img-5.png"
+                srcset="
+                  ./images/ingredients/img-5@1x.png 1x,
+                  ./images/ingredients/img-5@2x.png 2x
+                "
+                src="./images/ingredients/img-5@1x.png"
                 alt=""
-                width="214"
-                height="160"
+                width="236"
+                height="176"
+                loading="lazy"
               />
               <h3 class="ingredients-caption">CACAO</h3>
             </li>
@@ -282,10 +320,15 @@
             >
               <img
                 class="ingredients-ill"
-                src="./images/ingredients/img-6.png"
+                srcset="
+                  ./images/ingredients/img-6@1x.png 1x,
+                  ./images/ingredients/img-6@2x.png 2x
+                "
+                src="./images/ingredients/img-6@1x.png"
                 alt=""
-                width="214"
-                height="160"
+                width="236"
+                height="176"
+                loading="lazy"
               />
               <h3 class="ingredients-caption">RASPBERRY</h3>
             </li>
@@ -296,10 +339,15 @@
             >
               <img
                 class="ingredients-ill"
-                src="./images/ingredients/img-7.png"
+                srcset="
+                  ./images/ingredients/img-7@1x.png 1x,
+                  ./images/ingredients/img-7@2x.png 2x
+                "
+                src="./images/ingredients/img-7@1x.png"
                 alt=""
-                width="214"
-                height="160"
+                width="236"
+                height="176"
+                loading="lazy"
               />
               <h3 class="ingredients-caption">COCONUT OIL</h3>
             </li>
@@ -791,9 +839,92 @@
       </div>
     </div>
     <!-- #endregion -->
+    <!-- #region Mobile menu -->
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button class="mobile-menu-btn js-close-menu" type="button">
+        <svg width="16" height="16">
+          <use href="./images/icons.svg#x-close"></use>
+        </svg>
+      </button>
 
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
-    <!-- <script src="./js/scroll-animation.js"></script> -->
+      <ul class="mobile-menu-nav">
+        <li>
+          <a class="current" href="#">Studio</a>
+        </li>
+        <li>
+          <a href="#">Portfolio</a>
+        </li>
+        <li>
+          <a href="#">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu-contacts">
+        <li>
+          <a class="mobile-menu-contacts-link accent" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li>
+          <a class="mobile-menu-contacts-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="socials mobile-menu-socials">
+        <li class="socials-item">
+          <a
+            class="socials-link"
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to facebook.com"
+          >
+            <svg class="socials-icon" width="24" height="24">
+              <use class="no-hover" href="./images/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a
+            class="socials-link"
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to instagram.com"
+          >
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a
+            class="socials-link"
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to twitter.com"
+          >
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- #endregion -->
+
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/scroll-animation.js"></script> -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/form.js"></script>
   </body>
 </html>
